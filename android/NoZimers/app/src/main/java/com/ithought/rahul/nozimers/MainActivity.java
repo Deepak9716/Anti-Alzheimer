@@ -28,18 +28,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        location = (Button)findViewById(R.id.location);
-
-        location.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-//                Intent intent = new Intent(MainActivity.this,GeoLocation.class);
-//                startActivity(intent);
-
-
-            }
-        });
+//        location = (Button)findViewById(R.id.location);
+//
+//        location.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+////                Intent intent = new Intent(MainActivity.this,GeoLocation.class);
+////                startActivity(intent);
+//
+//
+//            }
+//        });
 
 
 
@@ -48,8 +48,10 @@ public class MainActivity extends AppCompatActivity {
         capture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(cameraIntent, CAMERA_REQUEST);
+//                Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+//                startActivityForResult(cameraIntent, CAMERA_REQUEST);
+                Intent intent = new Intent(MainActivity.this,Profile.class);
+                startActivity(intent);
             }
         });
 
