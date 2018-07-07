@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="25dp"
+    tools:context="com.ithought.rahul.nozimers.AddPerson">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/profileLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/profilePicLayout"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:hintTextAppearance="@style/FloatingLabelStyle">
+
+            <EditText
+                android:id="@+id/nishant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="25"
+                android:hint="Name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:hintTextAppearance="@style/FloatingLabelStyle">
+
+            <EditText
+                android:id="@+id/livesIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="25"
+                android:hint="Lives In"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:hintTextAppearance="@style/FloatingLabelStyle">
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="25"
+                android:hint="Age" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:hintTextAppearance="@style/FloatingLabelStyle">
+
+            <EditText
+                android:id="@+id/PlaceOfMeeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="25"
+                android:hint="Place Of Meeting" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:hintTextAppearance="@style/FloatingLabelStyle">
+
+            <EditText
+                android:id="@+id/Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="25"
+                android:hint="Time Of Meeting" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:hintTextAppearance="@style/FloatingLabelStyle">
+
+            <EditText
+                android:id="@+id/Relation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="25"
+                android:hint="Relation" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:hintTextAppearance="@style/FloatingLabelStyle">
+
+            <EditText
+                android:id="@+id/Notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="25"
+                android:hint="Notes" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+</LinearLayout>
+
+    <Button
+        android:layout_margin="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:text="Submit"
+        android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
