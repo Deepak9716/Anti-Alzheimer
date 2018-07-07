@@ -93,22 +93,57 @@
 
             </LinearLayout>
 
+
         </RelativeLayout>
 
     </ScrollView>
 
-    <Button
-        android:layout_alignParentBottom="true"
-        android:id="@+id/capture"
-        android:layout_margin="5dp"
-        android:layout_marginBottom="0dp"
-        android:layout_centerInParent="true"
-        android:background="@drawable/look"
-        android:layout_width="match_parent"
-        android:padding="20dp"
+
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Know People Around You"
-        android:textStyle="bold"/>
+        android:src="@drawable/ic_assistant"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="90dp"
+        android:layout_marginRight="20dp"
+        app:rippleColor="@color/gray"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/capture"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/look"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_height="wrap_content"
+            android:text="Know People Around You"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/peopleIKnow"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/look"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:layout_height="match_parent"
+            android:text="People I Know"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
 
 </RelativeLayout>
 
