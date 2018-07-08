@@ -1,18 +1,21 @@
-from . import detect_faces
+import detect_faces
 import json
 import http.client, urllib.request, urllib.parse, urllib.error, requests, json
 from PIL import Image
 
 
 def saveIds():
-    file = open("nozimers/people.json")
-    data = json.loads(file.read())
+    file = open("people.json")
+    data = json.loads(json.loads(file.read()))
     file.close()
     for person in data['people']:
         response = detect_faces.get_fid_and_pred(r"images/"+person['image'])
         response = json.loads(response)
         fid = response[0]['faceId']
         person['faceId'] = fid
+        print(person)
+    with open("people.json", 'w') as file:
+        file.write(json.dumps(data))
 
 
 
@@ -25,7 +28,7 @@ def predict_face(image):
     print(response)
     fid = response[0]['faceId']
     fids = []
-    file = open("nozimers/people.json")
+    file = open("people.json")
     data = json.loads(file.read())
     file.close()
     for person in data['people']:
@@ -50,7 +53,7 @@ def predict_face(image):
 
 
 def retrieve_details_from_id(fid):
-    file = open("nozimers/people.json")
+    file = open("people.json")
     data = json.loads(file.read())
     file.close()
     for person in data['people']:
@@ -62,6 +65,7 @@ def predict_final_face(image):
     facedata = predict_face(image)
     print(facedata)
     fid = json.loads(facedata)[0]['faceId']
+    print(fid)
     profile = retrieve_details_from_id(fid)
     return profile
 
