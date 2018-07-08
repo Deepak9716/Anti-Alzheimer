@@ -22,7 +22,13 @@ Our Application will let patient to click photo of everyone  he/she meets. And  
 
 We used android studio for making Android application, that application will send a request to the server to access Database, we have used Django localhost as a server and Sqlite as Database. Our server will respond in JSON format to application
 
+![whatsapp image 2018-07-08 at 9 07 54 am](https://user-images.githubusercontent.com/30495218/42418065-1519c20a-82b6-11e8-8b2a-e4a7fef8d474.jpeg)
+
 For Face Recognition purpose , we have used Microsoft Azure Face API and , For Chatbot, we have used Googel API DialogFlow .
+
+![whatsapp image 2018-07-08 at 9 07 55 am 1](https://user-images.githubusercontent.com/30495218/42418066-2a70a902-82b6-11e8-8888-3e2f8be2d30e.jpeg)
+
+![whatsapp image 2018-07-08 at 9 07 55 am](https://user-images.githubusercontent.com/30495218/42418069-2fbfd05e-82b6-11e8-8751-bad7f03cf19d.jpeg)
 
 **Features:**
 
